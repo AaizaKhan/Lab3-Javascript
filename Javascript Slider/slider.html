@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="javascriptSlider.css">
+</head>
+<body>
+
+<header>
+      <div class="nav">
+          <a href="#"> <img src="logo.png" width="80" height="70" alt="Netflix" ></a>
+          <a href="#" class="hvr-pulse">Home</a>
+          <a href="#" class="hvr-pulse">Episodes</a>
+          <a href="#" class="hvr-pulse">Sign up</a>
+          <a href="#" class="hvr-pulse">About</a>
+
+      </div>
+</header>
+<div style="width:100%">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div id="dot">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<script type="text/javascript" src="javascriptSlider.js"></script>
+
+
+
+</body>
+</html> 
