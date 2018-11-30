@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Chat Service</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<header>
+			<h1>Online Chat Service</h1>
+	</header>
+
+
+	<div class="navbar">
+		<ul id="toplist" >
+			
+			<li>	
+				<a href="#"><img src="logo.png">
+				<div class="username">Aaiza</div>
+				</a>
+
+			</li>
+			
+			<li>
+			    <a href="#"><img src="logo.png">
+				<div class="username">Annie</div>
+				</a>
+			</li>
+
+			<li>
+			    <a href="#"><img src="logo.png">
+				<div class="username">Sania</div>
+				</a>
+			</li>
+
+			<li>
+			    <a href="#"><img src="logo.png" >
+				<div class="username">Muterba</div>
+				</a>
+			</li>
+
+			<li>
+			    <a href="#"><img src="logo.png" >
+				<div class="username">Hoor</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="smth">
+
+	<div class="chatbox" id="div1">
+		<div class="active">
+			<h4>Aaiza</h4><!--<button onclick="closefunc()">Close</button>-->
+			<img src="closeb1.png" width="20" height="20" onclick="closefunc1()">
+		</div>
+		<div class="body">
+			<p>Hello...</p>
+		</div>
+		<div class="message">
+			<p id="p1">Enter your message</p>
+			<span>
+				<p id="p2">Send</p> 
+			</span>	
+		</div>
+	</div>
+
+	<div class="chatbox" id="div2">
+		<div class="active">
+			<h4>Sania</h4><!--<button onclick="closefunc2()">Close</button>-->
+			<img src="closeb1.png" width="20" height="20" onclick="closefunc2()">
+		</div>
+		<div class="body">
+			<p>Hello...</p>
+		</div>
+		<div class="message">
+			<p id="p1">Enter your message</p>
+			<span>
+				<p id="p2">Send</p> 
+			</span>	
+		</div>
+	</div>
+
+	<div class="chatbox" id="div3">
+		<div class="active">
+			<h4>Annie</h4><!--<button onclick="closefunc2()">Close</button>-->
+			<img src="closeb1.png" width="20" height="20" onclick="closefunc3()">
+		</div>
+		<div class="body">
+			<p>Hello...</p>
+		</div>
+		<div class="message">
+			<p id="p1">Enter your message</p>
+			<span>
+				<p id="p2">Send</p> 
+			</span>	
+		</div>
+	</div>
+
+	<div class="chatbox" id="div4">
+		<div class="active">
+			<h4>Muterba</h4><!--<button onclick="closefunc2()">Close</button>-->
+			<img src="closeb1.png" width="20" height="20" onclick="closefunc4()">
+		</div>
+		<div class="body">
+			<p>Hello...</p>
+		</div>
+		<div class="message">
+			<p id="p1">Enter your message</p>
+			<span>
+				<p id="p2">Send</p> 
+			</span>	
+		</div>
+	</div>
+
+	<div class="chatbox" id="div5">
+		<div class="active">
+			<h4>Hoor</h4><!--<button onclick="closefunc2()">Close</button>-->
+			<img src="closeb1.png" width="20" height="20" onclick="closefunc5()">
+		</div>
+		<div class="body">
+			<p>Hello...</p>
+		</div>
+		<div class="message">
+			<p id="p1">Enter your message</p>
+			<span>
+				<p id="p2">Send</p> 
+			</span>	
+		</div>
+	</div>
+	</div>
+
+
+	<div class="footer">
+		<div class="contact">
+			<ul>
+				<li><a href="https://www.twitter.com"> <img src="twitter.jpg" /> </a></li>
+				<li><a href="https://instagram.com"> <img src="instagram.png" /> </a></li>
+				<li><a href="https://www.facebook.com"> <img src="facebook.png" /> </a></li>
+			</ul>
+			
+		</div>
+		<p>Copyrights &copy All rights reserved 2018.</p>
+
+ 
+	</div>
+
+	<script type="text/javascript">
+		  	var lis = document.getElementById("toplist").getElementsByTagName('li');
+
+		    for (var i=0; i<lis.length; i++) {
+		    	
+		    	if(i==0)
+		        	lis[i].addEventListener('click', doStuff1);
+		        else if(i==1)
+		        	lis[i].addEventListener('click', doStuff2);
+		        else if(i==2)
+		        	lis[i].addEventListener('click', doStuff3);
+		        else if(i==3)
+		       		lis[i].addEventListener('click', doStuff4);
+		       	else 
+		       		lis[i].addEventListener('click', doStuff5);
+		       	
+		    }
+
+			 function doStuff1() {
+
+
+			        	document.getElementById("div1").style.display="inline-block";
+			     
+			}
+
+			function doStuff2() {
+
+			        	document.getElementById("div2").style.display="inline-block";
+			     
+			}
+
+			function doStuff3() {
+
+			        	document.getElementById("div3").style.display="inline-block";
+			     
+			}
+
+			 function doStuff4() {
+
+			        	document.getElementById("div4").style.display="inline-block";
+			     
+			}
+
+			function doStuff5() {
+
+			        	document.getElementById("div5").style.display="inline-block";
+			     
+			}
+
+			function closefunc1(){
+				/*toggle hide and show logic*/
+					var x = document.getElementById("div1");
+					    if (x.style.display === "none") {
+					        x.style.display = "block";
+						    } 
+						else {
+		        		x.style.display = "none";
+		    				}
+			}
+
+			function closefunc2(){
+					var x = document.getElementById("div2");
+					    if (x.style.display === "none") {
+					        x.style.display = "block";
+						    } 
+						else {
+		        		x.style.display = "none";
+		    				}
+			}
+
+			function closefunc3(){
+					var x = document.getElementById("div3");
+					    if (x.style.display === "none") {
+					        x.style.display = "block";
+						    } 
+						else {
+		        		x.style.display = "none";
+		    				}
+			}
+
+			function closefunc4(){
+					var x = document.getElementById("div4");
+					    if (x.style.display === "none") {
+					        x.style.display = "block";
+						    } 
+						else {
+		        		x.style.display = "none";
+		    				}
+			}
+
+			function closefunc5(){
+					var x = document.getElementById("div5");
+					    if (x.style.display === "none") {
+					        x.style.display = "block";
+						    } 
+						else {
+		        		x.style.display = "none";
+		    				}
+			}
+
+	</script>
+</body>
+</html>
